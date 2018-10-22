@@ -2,13 +2,23 @@ import React from "react";
 
 
 const Header = () => (
-    <nav class="navbar navbar-light bg-light">
-        <span class="navbar-brand mb-0 h1">Target Rep</span>
-        <form class="form-inline float-right">
-            <button class="btn btn-outline-success" data-toggle="modal" data-target="#login" type="button">Login</button>
-            <button class="btn btn-sm btn-outline-secondary" data-toggle="modal" data-target="#signup" type="button">Sign Up!</button>
-        </form>
-    </nav>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item">Target Rep</a>
+        </div>
+        <div class="navbar-end">
+            <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-primary">
+                        <strong>Sign up</strong>
+                    </a>
+                    <a class="button is-light">
+                        Log in
+                </a>
+                </div>
+            </div>
+        </div>
+    </nav >
 
 );
 
