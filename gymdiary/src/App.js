@@ -6,7 +6,6 @@ import Signup from "./components/Signup"
 
 const App = () => (
     <div>
-        <Header />
         <Navbar />
         <Login />
         <Signup />
