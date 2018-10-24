@@ -3,45 +3,76 @@ import React from "react";
 
 const Workoutlog = () => (
 
-    <div class="modal fade" id="workout" tabindex="-1" role="dialog" aria-labelledby="workoutTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="workoutTitle">Workout Log</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+
+            <label class="label">Target Muslce Group</label>
+            {/* Muscle dropdown */}
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Target Muscle</label>
                 </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleFormControlSelect1">Target Muscles</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div>
-                        <div class="form-row">
-                            <div class="col">
-                                <input type="integer" class="form-control" placeholder="10">Repetitions</input>
-                            </div>
-                            <div class="col">
-                                <input type="integer" class="form-control" placeholder="5">Sets</input>
-                            </div>
-                            <div class="col">
-                                <input type="integer" class="form-control" placeholder="50 kgs">Weight (kgs)</input>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            {/* use another component to create differnt muscle listings */}
+                            <div class="select">
+                                <select>
+                                    <option>Muscle 1</option>
+                                    <option>Muscle 2</option>
+                                    <option>Muscle 3</option>
+                                    <option>Muscle 4</option>
+                                </select>
                             </div>
                         </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
                 </div>
             </div>
+            {/* reps */}
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Reps</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="100"></input>
+                        </div>
+                        <p class="help">Total repetitions.</p>
+                    </div>
+                </div>
+            </div>
+            {/* weight */}
+            <div class="field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Weight</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <input class="input" type="text" placeholder="100"></input>
+                        </div>
+                        <p class="help">Weight in kgs.</p>
+                    </div>
+                </div>
+            </div>
+
+            {/* submit / cancel buttons */}
+            <div class="field is-grouped is-grouped-centered">
+                <p class="control">
+                    <a class="button is-primary">
+                        Submit
+                    </a>
+                </p>
+                <p class="control">
+                    <a class="button is-light">
+                        Cancel
+                    </a>
+                </p>
+            </div>
         </div>
+        <button class="modal-close is-large" aria-label="close"></button>
     </div>
 
 );

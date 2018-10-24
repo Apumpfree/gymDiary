@@ -1,54 +1,206 @@
-import React from "react";
+import React, { Component } from "react";
 
+class Signup extends Component {
 
-const Signup = () => (
+    state = {
+        name: "",
+        email: "",
+        emailVerify: "",
+        password: "",
+        passwordVerify: ""
+    };
 
-    <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="signupTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="signupTitle">Signup</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    handleInputChange = event => {
+        const { name, value } = event.target;
+
+        this.setState({
+            [name]: value
+        });
+    };
+
+    handleFormSubmit = event => {
+        event.preventDefault();
+        console.log("Login form submitted");
+        console.log("name: " + this.state.name);
+        console.log("email: " + this.state.email);
+        console.log("email: " + this.state.emailVerify);
+        console.log("password: " + this.state.password);
+        console.log("password: " + this.state.passwordVerify);
+        this.setState({
+            name: "",
+            email: "",
+            emailVerify: "",
+            password: "",
+            passwordVerify: "",
+        });
+    };
+    render(){
+        return(
+            <div id="signupModal" class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="field">
+                <label class="label ">Name</label>
+                <div class="control has-icons-left">
+                    <input
+                        class="input"
+                        type="text"
+                        placeholder="Jane Doe"
+                        name="name"
+                        value={this.state.name}
+                        onChange={this.handleInputChange}
+                    />
                 </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="exampleInputName">Name</label>
-                            <input type="text" class="form-control" id="exampleInputName" aria-describedby="textHelp" placeholder="Enter Name"></input>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"></input>
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Verify Email address</label>
-                            <input type="email" class="form-control" id="verifyEmail" aria-describedby="emailHelp" placeholder="Enter email"></input>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password"></input>
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Verify Password</label>
-                            <input type="password" class="form-control" id="verifyPassword" placeholder="Verify Password"></input>
-                        </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1"></input>
-                            <label class="form-check-label" for="exampleCheck1">I am not a robot</label>
-                        </div>
-                        
-                    </form>
+            </div>
+
+            <div class="field">
+                <label class="label">Email</label>
+                <div class="control has-icons-left">
+                    <input
+                        class="input"
+                        type="email"
+                        placeholder="Weight@TargetRep.com"
+                        name="email"
+                        value={this.state.email}
+                        onChange={this.handleInputChange}
+                    />
+
                 </div>
-                <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <p class="help">We will never release your email without permission.</p>
+            </div>
+            <div class="field">
+                <label class="label has-icons-left">Verify Email</label>
+                <div class="control">
+                    <input
+                        class="input"
+                        type="email"
+                        placeholder="Weight@TargetRep.com"
+                        name="emailVerify"
+                        value={this.state.emailVerify}
+                        onChange={this.handleInputChange}
+                    />
+                </div>
+            </div>
+            <div class="field">
+                <label class="label has-icons-left">Password</label>
+                <div class="control">
+                    <input
+                        class="input"
+                        type="text"
+                        placeholder="******"
+                        name="password"
+                        value={this.state.password}
+                        onChange={this.handleInputChange}
+                    />
+
+                </div>
+                <p class="help">Must be at least 6 characters long.</p>
+            </div>
+            <div class="field">
+                <label class="label has-icons-left">Verify password</label>
+                <div class="control">
+                    <input
+                        class="input"
+                        type="text"
+                        placeholder="******"
+                        name="passwordVerify"
+                        value={this.state.passwordVerify}
+                        onChange={this.handleInputChange}
+                    />
                 </div>
             </div>
         </div>
+        <div class="control">
+            <button class="button is-primary">Submit</button>
+        </div>
+        <button id="closeModalButton" class="modal-close is-large" aria-label="close"></button>
     </div>
+        );
+    };
+}
 
-);
+// const Signup = () => (
+
+//     <div id="signupModal" class="modal">
+//         <div class="modal-background"></div>
+//         <div class="modal-content">
+//             <div class="field">
+//                 <label class="label ">Name</label>
+//                 <div class="control has-icons-left">
+//                     <input
+//                         class="input"
+//                         type="text"
+//                         placeholder="Jane Doe"
+//                         name="name"
+//                         value={this.state.name}
+//                         onChange={this.handleInputChange}
+//                     />
+//                 </div>
+//             </div>
+
+//             <div class="field">
+//                 <label class="label">Email</label>
+//                 <div class="control has-icons-left">
+//                     <input
+//                         class="input"
+//                         type="email"
+//                         placeholder="Weight@TargetRep.com"
+//                         name="email"
+//                         value={this.state.email}
+//                         onChange={this.handleInputChange}
+//                     />
+
+//                 </div>
+//                 <p class="help">We will never release your email without permission.</p>
+//             </div>
+//             <div class="field">
+//                 <label class="label has-icons-left">Verify Email</label>
+//                 <div class="control">
+//                     <input
+//                         class="input"
+//                         type="email"
+//                         placeholder="Weight@TargetRep.com"
+//                         name="emailVerify"
+//                         value={this.state.emailVerify}
+//                         onChange={this.handleInputChange}
+//                     />
+//                 </div>
+//             </div>
+//             <div class="field">
+//                 <label class="label has-icons-left">Password</label>
+//                 <div class="control">
+//                     <input
+//                         class="input"
+//                         type="text"
+//                         placeholder="******"
+//                         name="password"
+//                         value={this.state.password}
+//                         onChange={this.handleInputChange}
+//                     />
+
+//                 </div>
+//                 <p class="help">Must be at least 6 characters long.</p>
+//             </div>
+//             <div class="field">
+//                 <label class="label has-icons-left">Verify password</label>
+//                 <div class="control">
+//                     <input
+//                         class="input"
+//                         type="text"
+//                         placeholder="******"
+//                         name="passwordVerify"
+//                         value={this.state.passwordVerify}
+//                         onChange={this.handleInputChange}
+//                     />
+//                 </div>
+//             </div>
+//         </div>
+//         <div class="control">
+//             <button class="button is-primary">Submit</button>
+//         </div>
+//         <button id="closeModalButton" class="modal-close is-large" aria-label="close"></button>
+//     </div>
+
+// );
 
 export default Signup;
