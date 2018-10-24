@@ -3,8 +3,8 @@ import PieMenu, { Slice } from 'react-pie-menu';
 
 export default ({ x, y }) => (
     <PieMenu
-        radius='125px'
-        centerRadius='35px'
+        radius='250px'
+        centerRadius='110px'
         centerX={x}
         centerY={y}
     >
