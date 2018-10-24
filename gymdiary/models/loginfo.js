@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const UserInfo = new Schema({
+const LogInfo = new Schema({
     targetGroup: {
         type: String,
         required: true
@@ -21,6 +21,6 @@ const UserInfo = new Schema({
     },
 });
 
-const UserInfo = mongoose.model("UserInfo", UserInfo);
+const LogInfo = mongoose.model("LogInfo", LogInfo);
 
-module.exports = UserInfo;
+module.exports = LogInfo;
