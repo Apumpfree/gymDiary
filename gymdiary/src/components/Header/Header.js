@@ -7,7 +7,7 @@ const Header = () => (
             <a class="navbar-item">
                 <strong>Target Rep</strong>
                 <br></br>
-                <img src="../../public/images/benchPressIcon.png"></img>
+                <img src="/images/benchPressIcon.png"></img>
             </a>
 
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
