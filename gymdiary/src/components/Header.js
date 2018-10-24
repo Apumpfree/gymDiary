@@ -26,10 +26,10 @@ const Header = () => (
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary">
+                        <a id="signupButton" class="button is-primary">
                             <strong>Sign up</strong>
                         </a>
-                        <a class="button is-light">
+                        <a id="loginButton" class="button is-light">
                             <strong>Log in</strong>
                         </a>
                     </div>
