@@ -1,15 +1,13 @@
 import React from "react";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
-import PieMenu from "./components/PieMenu";
-import Chart from "./components/chart";
+import Home from "./Pages/Home";
 
+
+
+// conditional rendering to determine what page is loaded.
+// react / Conditional rendering 
 const App = () => (
     <div>
-        <Login />
-        <Signup />
-        {/* <PieMenu /> */}
-        <Chart />
+        <Home />
     </div>
 );
 
