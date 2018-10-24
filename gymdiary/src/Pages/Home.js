@@ -19,6 +19,7 @@ class Home extends Component {
                         <Navbar />
                     </div>
                     <div class="column">
+                        
                         <p>insert components in this div</p>
                     </div>
 
