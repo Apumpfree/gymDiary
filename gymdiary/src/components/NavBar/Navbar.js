@@ -55,7 +55,7 @@ const Navbar = props => (
                 >
                 Videos
                 </a>
-                </li>
+            </li>
         </ul>
     </aside>
 

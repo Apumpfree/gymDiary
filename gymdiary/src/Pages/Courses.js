@@ -12,8 +12,8 @@ class Courses extends Component {
                         <img src="/images/benchPressIcon.png"></img>
                     </div>
                     <div class="box column is-one-third">
-                        box 2
-                            </div>
+                    <img src="/images/benchPressIcon.png"></img>
+                    </div>
                     <div class="box column is-one-third">
                         <img src="/images/benchPressIcon.png"></img>
                     </div>

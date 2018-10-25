@@ -9,7 +9,7 @@ import Navbar from "./components/NavBar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Login from "./components/LoginModal/Login";
 import Signup from "./components/SignupModal/Signup";
-
+import fourOhfour from "./Pages/404";
 
 class App extends Component {
     state = {
@@ -29,8 +29,10 @@ class App extends Component {
             return <Stats />;
         } else if (this.state.currentPage === "Logs") {
             return <Logs />;
-        } else {
+        }else if (this.state.currentPage === "Videos") {
             return <Videos />;
+        }else {
+            return <fourOhfour />;
         }
     };
     render() {
