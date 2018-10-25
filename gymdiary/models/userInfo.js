@@ -5,7 +5,7 @@ const UserInfo = new Schema({
   name: { 
       type: String, 
       trim: true,
-      required: "Please insert Name"
+      required: "Please enter your name"
     },
   email: { 
       type: String, 
