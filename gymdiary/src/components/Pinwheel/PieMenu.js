@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
+// import { render } from 'react-dom'; WIP
 import PieMenu, { Slice } from 'react-pie-menu';
 
 export default ({ x, y }) => (
     <PieMenu
         radius='250px'
         centerRadius='110px'
-        centerX={x}
-        centerY={y}
+        centerX={'50%'}
+        centerY={'125%'}
     >
         {/* Contents */}
-        <Slice onSelect={() => window.open('https://www.facebook.com', '_blank')}>
-            <div class="dropdown is-up is-hoverable">
+        <Slice id="slice1" onSelect={() => window.open('http://localhost:3000/','_self')}>
+            {/* -----On Hover on slice WIP------- */}
+            {/* <div class="dropdown is-up is-hoverable">
                 <div class="dropdown-trigger">
                     Upper
                 </div>
@@ -21,20 +23,21 @@ export default ({ x, y }) => (
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
+            {/* ------------ */}
+            Upper
         </Slice>
-        <Slice onSelect={() => window.open('https://www.twitter.com', '_blank')}>
+        <Slice id="slice2" onSelect={() => window.open('http://localhost:3000/','_self')}>
             Lower
         </Slice>
-        <Slice onSelect={() => window.open('https://www.linkedin.com', '_blank')}>
+        <Slice id="slice3" onSelect={() => window.open('http://localhost:3000/','_self')}>
             Cardio
         </Slice>
-        <Slice onSelect={() => window.open('https://github.com/psychobolt/react-pie-menu', '_blank')}>
+        <Slice id="slice4" onSelect={() => window.open('http://localhost:3000/','_self')}>
             Core
         </Slice>
-        <Slice onSelect={() => window.open('https://en.wikipedia.org/wiki/RSS', '_blank')}>
+        <Slice id="slice5" onSelect={() => window.open('http://localhost:3000/','_self')}>
             Back
         </Slice>
-
     </PieMenu>
 );
