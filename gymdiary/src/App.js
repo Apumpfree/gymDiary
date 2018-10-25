@@ -10,9 +10,9 @@ import Videos from "./Pages/Videos";
 // react / Conditional rendering 
 const App = () => (
     <div>
-        {/* <Home /> */}
+        <Home />
         {/* <Courses /> */}
-        <Stats />
+        {/* <Stats /> */}
     </div>
 );
 
