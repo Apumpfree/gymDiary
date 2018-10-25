@@ -1,5 +1,8 @@
 import React from "react";
 
+// toDO
+    // change state to display and close modal.
+    // change to component react setup
 
 const Workoutlog = () => (
 

@@ -2,6 +2,9 @@ import React, { Component } from "react";
 
 class Signup extends Component {
 
+    // toDO
+    // change state to display and close modal.
+
     state = {
         name: "",
         email: "",
