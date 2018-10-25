@@ -10,8 +10,7 @@ class Logs extends Component {
         return (
             <div>
                 <div>
-                    <Header />
-                    
+                    <Header />                    
                 </div>
                 <div class="columns">
                     <div class="column is-2">
