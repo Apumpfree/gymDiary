@@ -19,7 +19,6 @@ class Logs extends Component {
                     <div class="column">
                         <p>insert components in this div</p>
                     </div>
-
                 </div>
                 <div>
                     <Footer />

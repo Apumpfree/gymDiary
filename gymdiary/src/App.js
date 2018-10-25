@@ -11,7 +11,8 @@ import Videos from "./Pages/Videos";
 const App = () => (
     <div>
         {/* <Home /> */}
-        <Courses />
+        {/* <Courses /> */}
+        <Stats />
     </div>
 );
 
