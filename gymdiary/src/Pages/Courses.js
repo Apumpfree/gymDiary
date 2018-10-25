@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "../components/Header/Header";
 import Navbar from "../components/NavBar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 class Courses extends Component {
 
@@ -19,6 +20,9 @@ class Courses extends Component {
                         <p>insert components in this div</p>
                     </div>
 
+                </div>
+                <div>
+                    <Footer />
                 </div>
             </div>
         );

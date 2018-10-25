@@ -3,7 +3,7 @@ import Header from "../components/Header/Header";
 import Navbar from "../components/NavBar/Navbar";
 import Login from "../components/LoginModal/Login";
 import Signup from "../components/SignupModal/Signup";
-
+import Footer from "../components/Footer/Footer";
 class Home extends Component {
 
     render() {
@@ -23,6 +23,9 @@ class Home extends Component {
                         <p>insert components in this div</p>
                     </div>
 
+                </div>
+                <div>
+                    <Footer />
                 </div>
             </div>
         );
