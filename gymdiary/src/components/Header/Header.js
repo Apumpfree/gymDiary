@@ -2,7 +2,7 @@ import React from "react";
 
 
 const Header = () => (
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar has-background-grey" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item">
                 <strong>Target Rep</strong>

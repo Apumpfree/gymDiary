@@ -30,7 +30,7 @@ class Login extends Component {
         return (
             <div id="loginModal" class="modal">
                 <div class="modal-background"></div>
-                <div class="modal-content">
+                <div class="modal-content has-background-white-ter">
                     <div class="field">
                         <label class="label">Email</label>
                         <div class="control has-icons-left" action="auth/Login" method="post">

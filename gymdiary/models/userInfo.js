@@ -31,11 +31,13 @@ const UserInfo = new Schema({
     },
 });
 
+
+//encrypt and compare passowrds
 UserInfo.methods.hashPassword= function(password){
-  return bcrypt.hashSync(password, bycrpt.genSaltsync(10))
+  return bcrypt.hashSync(password, bcrypt.genSaltsync(10))
 }
 UserInfo.methods.comparePassowrd = function(password,hash){
-  return bcrypt.compareSync(passowrd,hash)
+  return bcrypt.compareSync(password,hash)
 }
 
 const UserInfo = mongoose.model("UserInfo", UserInfo);
