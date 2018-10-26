@@ -1,7 +1,4 @@
 import React, { Component } from "react";
-import Header from "../components/Header/Header";
-import Navbar from "../components/NavBar/Navbar";
-import Footer from "../components/Footer/Footer";
 import Table from "../components/Table/Table";
 class Stats extends Component {
 

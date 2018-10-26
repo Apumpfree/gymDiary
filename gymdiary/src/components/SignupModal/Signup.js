@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import API from "../../utils/API";
+
 
 class Signup extends Component {
 
@@ -13,6 +15,13 @@ class Signup extends Component {
         passwordVerify: ""
     };
 
+    // modalState = event => {
+    //     const modalState = false;
+    //     if(modalState === false){function(){
+
+    //     }}
+    // }
+
     handleInputChange = event => {
         const { name, value } = event.target;
 
@@ -26,16 +35,23 @@ class Signup extends Component {
         console.log("Login form submitted");
         console.log("name: " + this.state.name);
         console.log("email: " + this.state.email);
-        console.log("email: " + this.state.emailVerify);
+        console.log("emailV: " + this.state.emailVerify);
         console.log("password: " + this.state.password);
-        console.log("password: " + this.state.passwordVerify);
-        this.setState({
-            name: "",
-            email: "",
-            emailVerify: "",
-            password: "",
-            passwordVerify: "",
-        });
+        console.log("passwordV: " + this.state.passwordVerify);
+        
+        API.createUser({
+            name: this.state.name,
+            email: this.state.email,
+            password: this.state.password,
+        }).then(    
+            this.setState({
+                name: "",
+                email: "",
+                emailVerify: "",
+                password: "",
+                passwordVerify: "",
+            })            
+        )
     };
     render() {
         return (
