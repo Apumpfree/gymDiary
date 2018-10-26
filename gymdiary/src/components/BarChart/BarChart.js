@@ -9,8 +9,14 @@ class BarChart extends Component{
                 labels: ['Back', 'Chest', 'Legs', 'Core'],
                 datasets:[
                     {
-                    label: 'Weekly',
-                    data:[ 7, 3, 5, 3 ]
+                    label: 'Days',
+                    data:[ 7, 3, 5, 3 ],
+                    backgroundColor: [
+                        '#5BC0EB',
+                        '#6CC551',
+                        '#FDE74C',
+                        '#C3423F'
+                    ]
                     }
                 ]
             }
@@ -31,6 +37,13 @@ class BarChart extends Component{
                     legend:{
                         display:true,
                         position:'right',
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero:true
+                            }
+                        }]
                     }
                 }}
             />

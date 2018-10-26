@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import Header from "../components/Header/Header";
-import Navbar from "../components/NavBar/Navbar";
-import Footer from "../components/Footer/Footer";
 import Table from "../components/Table/Table";
+import PieChart from "../components/PieChart/PieChart";
+import LineChart from "../components/LineChart/LineChart";
+import BarChart from "../components/BarChart/BarChart";
 class Stats extends Component {
 
     render() {
@@ -11,15 +11,15 @@ class Stats extends Component {
                 <div class="column">
                     <div class="level">
                         <div class="box column">
-                            Bar
+                            <BarChart />
                             </div>
                         <div class="box column ">
-                            Line
+                            <LineChart />
                             </div>
                     </div>
                     <div class="level">
                         <div class="box column">
-                            Pie
+                            <PieChart />
                             </div>
                         <div class="box column is-two-thirds ">
                             <Table />

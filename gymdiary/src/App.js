@@ -1,23 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
-import BarChart from "./components/BarChart";
-import PieChart from "./components/PieChart";
-
-const App = () => (
-    <div>
-        <Header />
-        <Navbar />
-        <Login />
-        <Signup />
-        <BarChart />
-        <PieChart />
-    </div>
-);
-=======
 import React, { Component } from "react";
 import Home from "./Pages/Home";
 import Courses from "./Pages/Courses";
@@ -81,6 +61,5 @@ class App extends Component {
         );
     };
 }
->>>>>>> 7a70ddb311b82f4e3f6337918d6145e158678379
 
 export default App;
