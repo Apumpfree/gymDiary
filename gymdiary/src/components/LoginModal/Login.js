@@ -33,7 +33,7 @@ class Login extends Component {
                 <div class="modal-content">
                     <div class="field">
                         <label class="label">Email</label>
-                        <div class="control has-icons-left">
+                        <div class="control has-icons-left" action="auth/Login" method="post">
                             <input
                                 class="input"
                                 type="email"
@@ -53,7 +53,7 @@ class Login extends Component {
                         <div class="control has-icons-left">
                             <input
                                 class="input"
-                                type="text"
+                                type="password"
                                 placeholder="******"
                                 name="password"
                                 value={this.state.password}
@@ -66,7 +66,7 @@ class Login extends Component {
                     </div>
                 </div>
                 <div class="control">
-                    <button class="button is-primary" onClick={this.handleFormSubmit} >Submit</button>
+                    <button class="button is-primary" onClick={this.handleFormSubmit} value="submit" >Submit</button>
                 </div>
                 <button id="closeButtonModal" class="modal-close is-large" aria-label="close"></button>
             </div>
