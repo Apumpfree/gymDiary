@@ -8,13 +8,13 @@ class Home extends Component {
                 <div class="column">
                     <div class="level">
                         <div class="box column is-one-third">
-                            box 1
+                            Weekly overview chart
                             </div>
                         <div class="box column is-one-third">
-                            box 2
+                            Stuff?
                             </div>
                         <div class="box column is-one-third">
-                            box 3
+                            Last Entry
                             </div>
                     </div>
                     <section class="hero is-medium is-primary is-bold">
