@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import {Bar, Line, Pie} from 'react-chartjs-2';
+import {Line} from 'react-chartjs-2';
 
-class Chart extends Component{
+class LineChart extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -10,18 +10,9 @@ class Chart extends Component{
                 datasets:[
                     {
                     label: 'Weekly',
-                    data:[
-                        7,
-                        3,
-                        5,
-                        3
-                    ]
-                        
-                    
-                }
-
+                    data:[ 7, 3, 5, 3 ]
+                    }
                 ]
-
             }
         }
     }
@@ -29,8 +20,8 @@ class Chart extends Component{
 
     render() {
         return (
-            <div className="barChart">
-            <Bar
+            <div className="LineChart">
+            <Line
                 data={this.state.chartData}
                 options={{
                     maintainAspectRatio: false
@@ -41,4 +32,4 @@ class Chart extends Component{
     }
 }
 
-export default Chart;
+export default LineChart;

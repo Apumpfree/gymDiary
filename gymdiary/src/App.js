@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import Chart from "./components/Chart";
+import BarChart from "./components/BarChart";
+import PieChart from "./components/PieChart";
 
 const App = () => (
     <div>
@@ -11,7 +12,8 @@ const App = () => (
         <Navbar />
         <Login />
         <Signup />
-        <Chart />
+        <BarChart />
+        <PieChart />
     </div>
 );
 
