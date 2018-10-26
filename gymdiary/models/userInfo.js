@@ -1,5 +1,8 @@
 const mongoose = require("mongoose");
+const bcrypt = require('bcrypt-node.js');
+
 const Schema = mongoose.Schema;
+
 
 const UserInfo = new Schema({
   name: { 
@@ -27,6 +30,15 @@ const UserInfo = new Schema({
       default: Date.now 
     },
 });
+
+
+//encrypt and compare passowrds
+UserInfo.methods.hashPassword= function(password){
+  return bcrypt.hashSync(password, bcrypt.genSaltsync(10))
+}
+UserInfo.methods.comparePassowrd = function(password,hash){
+  return bcrypt.compareSync(password,hash)
+}
 
 const UserInfo = mongoose.model("UserInfo", UserInfo);
 
