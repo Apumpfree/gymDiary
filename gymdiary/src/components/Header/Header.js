@@ -1,8 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 
+class Header extends Component {
 
-const Header = () => (
-    <nav class="navbar has-background-grey" role="navigation" aria-label="main navigation">
+     
+    
+    render(){
+        return(
+            <nav class="navbar has-background-grey" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item">
                 <strong>Target Rep</strong>
@@ -38,7 +42,8 @@ const Header = () => (
         </div>
     </nav>
 
-    
-);
+        );
+    }
+}
 
 export default Header;
