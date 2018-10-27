@@ -26,9 +26,9 @@ class Signup extends Component {
         console.log("Login form submitted");
         console.log("name: " + this.state.name);
         console.log("email: " + this.state.email);
-        console.log("email: " + this.state.emailVerify);
+        console.log("emailV: " + this.state.emailVerify);
         console.log("password: " + this.state.password);
-        console.log("password: " + this.state.passwordVerify);
+        console.log("passwordV: " + this.state.passwordVerify);
         this.setState({
             name: "",
             email: "",
