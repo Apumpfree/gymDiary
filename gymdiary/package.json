@@ -3,12 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-<<<<<<< HEAD
-    "bulma": "^0.7.2",
-    "bulma-extensions": "^3.0.0",
-=======
     "axios": "^0.18.0",
->>>>>>> e530f6573c43fe85e3c6dd72f81567282021d23f
     "chart.js": "^2.7.3",
     "react": "^16.5.2",
     "react-dom": "^16.6.0",
