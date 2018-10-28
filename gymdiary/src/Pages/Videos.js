@@ -6,7 +6,7 @@ class Videos extends Component {
     render() {
         return (
             <div>
-                    <div class="column">
+                    <div className="column">
                         <p>insert components in this div</p>
                     </div>
             </div>

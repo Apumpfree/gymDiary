@@ -5,42 +5,42 @@ class Courses extends Component {
 
     render() {
         return (
-            <div class="column">
+            <div className="column">
                 {/* row 1 */}
-                <div class="level">
-                    <div class="box column is-one-third">
-                        <img src="/images/benchPressIcon.png"></img>
+                <div className="level">
+                    <div className="box column is-one-third">
+                        <img src="/images/benchPressIcon.png" alt=""></img>
                     </div>
-                    <div class="box column is-one-third">
-                    <img src="/images/benchPressIcon.png"></img>
+                    <div className="box column is-one-third">
+                    <img src="/images/benchPressIcon.png" alt=""></img>
                     </div>
-                    <div class="box column is-one-third">
-                        <img src="/images/benchPressIcon.png"></img>
+                    <div className="box column is-one-third">
+                        <img src="/images/benchPressIcon.png" alt=""></img>
                     </div>
                 </div>
                 {/* row 2 */}
-                <div class="level">
-                    <div class="box column is-one-third">
-                        <img src="/images/benchPressIcon.png"></img>
+                <div className="level">
+                    <div className="box column is-one-third">
+                        <img src="/images/benchPressIcon.png" alt=""></img>
                     </div>
-                    <div class="box column is-one-third">
-                        <img src="/images/benchPressIcon.png"></img>
+                    <div className="box column is-one-third">
+                        <img src="/images/benchPressIcon.png" alt=""></img>
                     </div>
-                    <div class="box column is-one-third">
-                        <img src="/images/benchPressIcon.png"></img>
+                    <div className="box column is-one-third">
+                        <img src="/images/benchPressIcon.png" alt=""></img>
                     </div>
                 </div>
                 {/* row 3 */}
-                <div class="level">
-                </div><div class="level">
-                    <div class="box column is-one-third">
-                        <img src="/images/icons8-ereader-50.png"></img>
+                <div className="level">
+                </div><div className="level">
+                    <div className="box column is-one-third">
+                        <img src="/images/icons8-ereader-50.png" alt=""></img>
                     </div>
-                    <div class="box column is-one-third">
-                        <img src="/images/icons8-ereader-50.png"></img>
+                    <div className="box column is-one-third">
+                        <img src="/images/icons8-ereader-50.png" alt=""></img>
                     </div>
-                    <div class="box column is-one-third">
-                        <img src="/images/icons8-ereader-50.png"></img>
+                    <div className="box column is-one-third">
+                        <img src="/images/icons8-ereader-50.png" alt=""></img>
                     </div>
                 </div>
             </div>               

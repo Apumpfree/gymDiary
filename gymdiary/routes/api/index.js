@@ -5,6 +5,5 @@ const userRoutes = require("./user");
 
 router.use("/user", userRoutes);
 
-console.log("routes.index.js called")
 
 module.exports = router;

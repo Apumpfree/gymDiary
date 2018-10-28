@@ -43,8 +43,8 @@ class App extends Component {
                     <Login />
                     <Signup />
                 </div>
-                <div class="columns">
-                    <div class="column is-2">
+                <div className="columns">
+                    <div className="column is-2">
                         <Navbar
                             currentPage={this.state.currentPage}
                             handlePageChange={this.handlePageChange}

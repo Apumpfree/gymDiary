@@ -57,14 +57,14 @@ class Signup extends Component {
     };
     render() {
         return (
-            <div id="signupModal" class="modal ">
-                <div class="modal-background "></div>
-                <div class="modal-content has-background-white-ter">
-                    <div class="field">
-                        <label class="label ">Name</label>
-                        <div class="control has-icons-left">
+            <div id="signupModal" className="modal ">
+                <div className="modal-background "></div>
+                <div className="modal-content has-background-white-ter">
+                    <div className="field">
+                        <label className="label ">Name</label>
+                        <div className="control has-icons-left">
                             <input
-                                class="input"
+                                className="input"
                                 type="text"
                                 placeholder="Jane Doe"
                                 name="name"
@@ -74,11 +74,11 @@ class Signup extends Component {
                         </div>
                     </div>
 
-                    <div class="field">
-                        <label class="label">Email</label>
-                        <div class="control has-icons-left">
+                    <div className="field">
+                        <label className="label">Email</label>
+                        <div className="control has-icons-left">
                             <input
-                                class="input"
+                                className="input"
                                 type="email"
                                 placeholder="Weight@TargetRep.com"
                                 name="email"
@@ -87,13 +87,13 @@ class Signup extends Component {
                             />
 
                         </div>
-                        <p class="help">We will never release your email without permission.</p>
+                        <p className="help">We will never release your email without permission.</p>
                     </div>
-                    <div class="field">
-                        <label class="label has-icons-left">Verify Email</label>
-                        <div class="control">
+                    <div className="field">
+                        <label className="label has-icons-left">Verify Email</label>
+                        <div className="control">
                             <input
-                                class="input"
+                                className="input"
                                 type="email"
                                 placeholder="Weight@TargetRep.com"
                                 name="emailVerify"
@@ -102,11 +102,11 @@ class Signup extends Component {
                             />
                         </div>
                     </div>
-                    <div class="field">
-                        <label class="label has-icons-left">Password</label>
-                        <div class="control">
+                    <div className="field">
+                        <label className="label has-icons-left">Password</label>
+                        <div className="control">
                             <input
-                                class="input"
+                                className="input"
                                 type="text"
                                 placeholder="******"
                                 name="password"
@@ -115,13 +115,13 @@ class Signup extends Component {
                             />
 
                         </div>
-                        <p class="help">Must be at least 6 characters long.</p>
+                        <p className="help">Must be at least 6 characters long.</p>
                     </div>
-                    <div class="field">
-                        <label class="label has-icons-left">Verify password</label>
-                        <div class="control">
+                    <div className="field">
+                        <label className="label has-icons-left">Verify password</label>
+                        <div className="control">
                             <input
-                                class="input"
+                                className="input"
                                 type="text"
                                 placeholder="******"
                                 name="passwordVerify"
@@ -131,10 +131,10 @@ class Signup extends Component {
                         </div>
                     </div>
                 </div>
-                <div class="control">
-                    <button class="button is-primary" onClick={this.handleFormSubmit} value="submit" >Submit</button>
+                <div className="control">
+                    <button className="button is-primary" onClick={this.handleFormSubmit} value="submit" >Submit</button>
                 </div>
-                <button id="closeModalButton" class="modal-close is-large" aria-label="close"></button>
+                <button id="closeModalButton" className="modal-close is-large" aria-label="close"></button>
             </div>
             
         );
