@@ -1,44 +1,57 @@
-import React from "react";
+import React, { Component } from "react";
 
+class Header externds Component {
 
-const Header = () => (
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item">
-                <strong>Target Rep</strong>
-                <br></br>
-                <img src="/images/benchPressIcon.png"></img>
-            </a>
+    modalState = event => {
+        if(this.state.modal === false){
+            $("#signupModal")
+        }
+    }
 
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
+    render(){
+        return (
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item">
+                        <strong>Target Rep</strong>
+                        <br></br>
+                        <img src="/images/benchPressIcon.png"></img>
+                    </a>
 
-        <div id="navbarBasicExample" class="navbar-menu">
-            <div class="navbar-start">
-                {/* needs navbar-start and navbar end */}
-                    
-            </div>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
 
-            <div class="navbar-end">
-                <div class="navbar-item">
-                    <div class="buttons">
-                        <a id="signupButton" class="button is-primary">
-                            <strong>Sign up</strong>
-                        </a>
-                        <a id="loginButton" class="button is-light">
-                            <strong>Log in</strong>
-                        </a>
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start">
+                        {/* needs navbar-start and navbar end */}
+
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a 
+                                    id="signupButton" 
+                                    class="button is-primary"
+                                    >
+                                    <strong>Sign up</strong>
+                                </a>
+                                <a id="loginButton" class="button is-light">
+                                    <strong>Log in</strong>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </nav>
+            </nav>
 
-    
-);
+        );
+    };
+}
+
 
 export default Header;

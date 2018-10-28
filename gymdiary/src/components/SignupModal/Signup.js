@@ -4,13 +4,15 @@ class Signup extends Component {
 
     // toDO
     // change state to display and close modal.
+   
 
     state = {
         name: "",
         email: "",
         emailVerify: "",
         password: "",
-        passwordVerify: ""
+        passwordVerify: "",
+        modalview: false,
     };
 
     handleInputChange = event => {
@@ -114,7 +116,12 @@ class Signup extends Component {
             </div>
         </div>
         <div class="control">
-            <button class="button is-primary">Submit</button>
+            <button 
+            class="button is-primary"
+            onClick={this.handleFormSubmit}
+            >
+            Submit
+            </button>
         </div>
         <button id="closeModalButton" class="modal-close is-large" aria-label="close"></button>
     </div>
