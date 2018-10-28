@@ -36,6 +36,6 @@ const UserInfo = new Schema({
 //   return bcrypt.compareSync(password,hash)
 // }
 
-const UserInfo = mongoose.model("UserInfo", UserInfo);
+const user = mongoose.model("users", UserInfo);
 
-module.exports = UserInfo;
+module.exports = user;

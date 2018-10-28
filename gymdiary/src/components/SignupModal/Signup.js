@@ -52,8 +52,9 @@ class Signup extends Component {
                 emailVerify: "",
                 password: "",
                 passwordVerify: "",
-            })            
-        )
+            }))
+            .catch(err => console.log(err))           
+        
     };
     render() {
         return (
