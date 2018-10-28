@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home";
 import Courses from "./Pages/Courses";
 import Logs from "./Pages/Logs";
@@ -63,3 +64,8 @@ class App extends Component {
 }
 
 export default App;
+
+
+
+
+

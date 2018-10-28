@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-
+import "./Login.css"
 class Login extends Component {
-
-    
 
     state = {
         email: "",
@@ -29,7 +27,10 @@ class Login extends Component {
         return (
             <div id="loginModal" className="modal">
                 <div className="modal-background"></div>
-                <div className="modal-content has-background-white-ter">
+                <div id="modal1" className="modal-content has-background-white-ter">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Login</p>
+                    </header>
                     <div className="field">
                         <label className="label">Email</label>
                         <div className="control has-icons-left" action="auth/Login" method="post">
@@ -42,9 +43,9 @@ class Login extends Component {
                                 onChange={this.handleInputChange}
                             />
                             <span className="icon is-small is-left">
-                            <i className="fas fa-envelope"></i>
+                                <i className="fas fa-envelope"></i>
                             </span>
-                            
+
                         </div>
                     </div>
                     <div className="field">
@@ -65,7 +66,7 @@ class Login extends Component {
                     </div>
                 </div>
                 <div className="control">
-                    <button className="button is-primary" onClick={this.handleFormSubmit} value="submit" >Submit</button>
+                    <button id="submitButton" className="button is-primary" onClick={this.handleFormSubmit} value="submit" >Submit</button>
                 </div>
                 <button id="closeButtonModal" className="modal-close is-large" aria-label="close"></button>
             </div>

@@ -1,12 +1,13 @@
 import React, { Component } from "react";
 import API from "../../utils/API";
+import "./Signup.css"
 
 
 class Signup extends Component {
 
-   // toDO
+    // toDO
     // change state to display and close modal.
-   
+
 
     state = {
         name: "",
@@ -40,12 +41,12 @@ class Signup extends Component {
         console.log("emailV: " + this.state.emailVerify);
         console.log("password: " + this.state.password);
         console.log("passwordV: " + this.state.passwordVerify);
-        
+
         API.createUser({
             name: this.state.name,
             email: this.state.email,
             password: this.state.password,
-        }).then(    
+        }).then(
             this.setState({
                 name: "",
                 email: "",
@@ -53,14 +54,17 @@ class Signup extends Component {
                 password: "",
                 passwordVerify: "",
             }))
-            .catch(err => console.log(err))           
-        
+            .catch(err => console.log(err))
+
     };
     render() {
         return (
             <div id="signupModal" className="modal ">
                 <div className="modal-background "></div>
-                <div className="modal-content has-background-white-ter">
+                <div id="modal1" className="modal-content has-background-white-ter">
+                    <header class="modal-card-head">
+                        <p class="modal-card-title">Sign Up</p>
+                    </header>
                     <div className="field">
                         <label className="label ">Name</label>
                         <div className="control has-icons-left">
@@ -72,6 +76,9 @@ class Signup extends Component {
                                 value={this.state.name}
                                 onChange={this.handleInputChange}
                             />
+                            <span class="icon is-small is-left">
+                                <i class="fas fa-user"></i>
+                            </span>
                         </div>
                     </div>
 
@@ -86,13 +93,16 @@ class Signup extends Component {
                                 value={this.state.email}
                                 onChange={this.handleInputChange}
                             />
+                            <span className="icon is-small is-left">
+                                <i className="fas fa-envelope"></i>
+                            </span>
 
                         </div>
                         <p className="help">We will never release your email without permission.</p>
                     </div>
                     <div className="field">
-                        <label className="label has-icons-left">Verify Email</label>
-                        <div className="control">
+                        <label className="label ">Verify Email</label>
+                        <div className="control has-icons-left">
                             <input
                                 className="input"
                                 type="email"
@@ -101,11 +111,14 @@ class Signup extends Component {
                                 value={this.state.emailVerify}
                                 onChange={this.handleInputChange}
                             />
+                            <span className="icon is-small is-left">
+                                <i className="fas fa-envelope"></i>
+                            </span>
                         </div>
                     </div>
                     <div className="field">
-                        <label className="label has-icons-left">Password</label>
-                        <div className="control">
+                        <label className="label">Password</label>
+                        <div className="control  has-icons-left">
                             <input
                                 className="input"
                                 type="text"
@@ -114,13 +127,16 @@ class Signup extends Component {
                                 value={this.state.password}
                                 onChange={this.handleInputChange}
                             />
+                            <span className="icon is-small is-left">
+                                <i className="fas fa-lock"></i>
+                            </span>
 
                         </div>
                         <p className="help">Must be at least 6 characters long.</p>
                     </div>
                     <div className="field">
-                        <label className="label has-icons-left">Verify password</label>
-                        <div className="control">
+                        <label className="label ">Verify password</label>
+                        <div className="control has-icons-left">
                             <input
                                 className="input"
                                 type="text"
@@ -129,15 +145,18 @@ class Signup extends Component {
                                 value={this.state.passwordVerify}
                                 onChange={this.handleInputChange}
                             />
+                            <span className="icon is-small is-left">
+                                <i className="fas fa-lock"></i>
+                            </span>
                         </div>
                     </div>
                 </div>
                 <div className="control">
-                    <button className="button is-primary" onClick={this.handleFormSubmit} value="submit" >Submit</button>
+                    <button id="submitButton" className="button is-primary" onClick={this.handleFormSubmit} value="submit" >Submit</button>
                 </div>
                 <button id="closeModalButton" className="modal-close is-large" aria-label="close"></button>
             </div>
-            
+
         );
     };
 }
