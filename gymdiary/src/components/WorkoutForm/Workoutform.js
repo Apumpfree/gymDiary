@@ -6,21 +6,21 @@ import React from "react";
 
 const Workoutlog = () => (
 
-    <div class="modal">
-        <div class="modal-background"></div>
-        <div class="modal-content">
+    <div className="modal">
+        <div className="modal-background"></div>
+        <div className="modal-content">
 
-            <label class="label">Target Muslce Group</label>
+            <label className="label">Target Muslce Group</label>
             {/* Muscle dropdown */}
-            <div class="field is-horizontal">
-                <div class="field-label is-normal">
-                    <label class="label">Target Muscle</label>
+            <div className="field is-horizontal">
+                <div className="field-label is-normal">
+                    <label className="label">Target Muscle</label>
                 </div>
-                <div class="field-body">
-                    <div class="field">
-                        <div class="control">
+                <div className="field-body">
+                    <div className="field">
+                        <div className="control">
                             {/* use another component to create differnt muscle listings */}
-                            <div class="select">
+                            <div className="select">
                                 <select>
                                     <option>Muscle 1</option>
                                     <option>Muscle 2</option>
@@ -33,49 +33,49 @@ const Workoutlog = () => (
                 </div>
             </div>
             {/* reps */}
-            <div class="field is-horizontal">
-                <div class="field-label is-normal">
-                    <label class="label">Reps</label>
+            <div className="field is-horizontal">
+                <div className="field-label is-normal">
+                    <label className="label">Reps</label>
                 </div>
-                <div class="field-body">
-                    <div class="field">
-                        <div class="control">
-                            <input class="input" type="text" placeholder="100"></input>
+                <div className="field-body">
+                    <div className="field">
+                        <div className="control">
+                            <input className="input" type="text" placeholder="100"></input>
                         </div>
-                        <p class="help">Total repetitions.</p>
+                        <p className="help">Total repetitions.</p>
                     </div>
                 </div>
             </div>
             {/* weight */}
-            <div class="field is-horizontal">
-                <div class="field-label is-normal">
-                    <label class="label">Weight</label>
+            <div className="field is-horizontal">
+                <div className="field-label is-normal">
+                    <label className="label">Weight</label>
                 </div>
-                <div class="field-body">
-                    <div class="field">
-                        <div class="control">
-                            <input class="input" type="text" placeholder="100"></input>
+                <div className="field-body">
+                    <div className="field">
+                        <div className="control">
+                            <input className="input" type="text" placeholder="100"></input>
                         </div>
-                        <p class="help">Weight in kgs.</p>
+                        <p className="help">Weight in kgs.</p>
                     </div>
                 </div>
             </div>
 
             {/* submit / cancel buttons */}
-            <div class="field is-grouped is-grouped-centered">
-                <p class="control">
-                    <a class="button is-primary">
+            <div className="field is-grouped is-grouped-centered">
+                <p className="control">
+                    <a className="button is-primary">
                         Submit
                     </a>
                 </p>
-                <p class="control">
-                    <a class="button is-light">
+                <p className="control">
+                    <a className="button is-light">
                         Cancel
                     </a>
                 </p>
             </div>
         </div>
-        <button class="modal-close is-large" aria-label="close"></button>
+        <button className="modal-close is-large" aria-label="close"></button>
     </div>
 
 );

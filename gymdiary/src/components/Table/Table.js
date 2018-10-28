@@ -5,7 +5,7 @@ class Table extends Component {
 
     render() {
         return (
-            <table class="table is-fullwidth">
+            <table className="table is-fullwidth">
                 <thead>
                     <tr>
                         <th>Date</th>

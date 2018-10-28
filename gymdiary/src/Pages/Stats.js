@@ -5,20 +5,20 @@ class Stats extends Component {
     render() {
         return (
             <div>
-                <div class="column">
-                    <div class="level">
-                        <div class="box column">
+                <div className="column">
+                    <div className="level">
+                        <div className="box column">
                             Bar
                             </div>
-                        <div class="box column ">
+                        <div className="box column ">
                             Line
                             </div>
                     </div>
-                    <div class="level">
-                        <div class="box column">
+                    <div className="level">
+                        <div className="box column">
                             Pie
                             </div>
-                        <div class="box column is-two-thirds ">
+                        <div className="box column is-two-thirds ">
                             <Table />
                         </div>
                     </div>

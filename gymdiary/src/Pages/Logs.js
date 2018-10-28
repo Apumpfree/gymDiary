@@ -7,38 +7,38 @@ class Logs extends Component {
     render() {
         return (
             <div>
-                <div class="columns">
-                    <div class="box column">
-                        <figure class="image is-128x128">
-                            <img src="../images/chest.jpg" />
+                <div className="columns">
+                    <div className="box column">
+                        <figure className="image is-128x128">
+                            <img src="../images/chest.jpg" alt="" />
                         </figure>
                     </div>
-                    <div class="box column">
-                        <figure class="image is-128x128">
-                            <img src="../images/runner.jpg" />
+                    <div className="box column">
+                        <figure className="image is-128x128">
+                            <img src="../images/runner.jpg" alt="" />
                         </figure>
                     </div>
-                    <div class="box column">
-                        <figure class="image is-128x128">
-                            <img src="../images/back.jpg" />
+                    <div className="box column">
+                        <figure className="image is-128x128">
+                            <img src="../images/back.jpg" alt="" />
                         </figure>
                     </div>
                 </div>
                 <br/>
-                <div class="columns">
-                    <div class="box column">
-                        <figure class="image is-128x128">
-                            <img src="../images/legs.jpg" />
+                <div className="columns">
+                    <div className="box column">
+                        <figure className="image is-128x128">
+                            <img src="../images/legs.jpg" alt="" />
                         </figure>
                     </div>
-                    <div class="box column">
-                        <figure class="image is-128x128">
-                            <img src="../images/arms2.jpg" />
+                    <div className="box column">
+                        <figure className="image is-128x128">
+                            <img src="../images/arms2.jpg" alt="" />
                         </figure>
                     </div>
-                    <div class="box column">
-                        <figure class="image is-128x128">
-                            <img src="../images/core.jpg" />
+                    <div className="box column">
+                        <figure className="image is-128x128">
+                            <img src="../images/core.jpg" alt="" />
                         </figure>
                     </div>
                 </div>
