@@ -1,16 +1,12 @@
 import React, { Component } from "react";
 
-class Header externds Component {
+class Header extends Component {
 
-    modalState = event => {
-        if(this.state.modal === false){
-            $("#signupModal")
-        }
-    }
 
-    render(){
+
+    render() {
         return (
-            <nav class="navbar" role="navigation" aria-label="main navigation">
+            <nav class="navbar has-background-grey" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a class="navbar-item">
                         <strong>Target Rep</strong>
@@ -34,10 +30,7 @@ class Header externds Component {
                     <div class="navbar-end">
                         <div class="navbar-item">
                             <div class="buttons">
-                                <a 
-                                    id="signupButton" 
-                                    class="button is-primary"
-                                    >
+                                <a id="signupButton" class="button is-primary">
                                     <strong>Sign up</strong>
                                 </a>
                                 <a id="loginButton" class="button is-light">
@@ -49,9 +42,9 @@ class Header externds Component {
                 </div>
             </nav>
 
-        );
-    };
-}
-
-
+                );
+            };
+        }
+        
+        
 export default Header;

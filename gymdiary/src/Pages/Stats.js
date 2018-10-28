@@ -1,24 +1,27 @@
 import React, { Component } from "react";
-import Header from "../components/Header/Header";
-import Navbar from "../components/NavBar/Navbar";
-
+import Table from "../components/Table/Table";
 class Stats extends Component {
 
     render() {
         return (
             <div>
-                <div>
-                    <Header />
-                    
-                </div>
-                <div class="columns">
-                    <div class="column is-2">
-                        <Navbar />
+                <div class="column">
+                    <div class="level">
+                        <div class="box column">
+                            Bar
+                            </div>
+                        <div class="box column ">
+                            Line
+                            </div>
                     </div>
-                    <div class="column">
-                        <p>insert components in this div</p>
+                    <div class="level">
+                        <div class="box column">
+                            Pie
+                            </div>
+                        <div class="box column is-two-thirds ">
+                            <Table />
+                        </div>
                     </div>
-
                 </div>
             </div>
         );

@@ -1,26 +1,62 @@
 import React from "react";
 
 
-const Navbar = () => (
-    // <nav class="navbar is-dark" style>
-    //     <a class="nav-link active" href="#">Homepage</a>
-    //     <a class="nav-link" href="#">Log</a>
-    //     <a class="nav-link" href="#">Courses</a>
-    //     <a class="nav-link" href="#">Stats</a>
-    //     <a class="nav-link" href="#">Videos</a>
-    //     <a class="nav-link" href="#">Stats</a>
-    // </nav>
-    <aside class="menu">
-       
+const Navbar = props => (
+
+    <aside class="menu has-background-danger">
+
         <ul class="menu-list">
-            <li><a>Home</a></li>
-            <li><a>Logs</a></li>
-            <li><a>Courses</a></li>
-            <li><a>Stats</a></li>
-            <li><a>Videos</a></li>
-            <li><a>BOiiii</a></li>
+            <li>
+                <a
+                    onClick={() => props.handlePageChange("Home")}
+                    className={
+                        props.currentPage === "Home" ? "nav-link active" : "nav-link"
+                    }
+                >
+                    Home
+                </a>
+            </li>
+            <li>
+                <a
+                    onClick={() => props.handlePageChange("Logs")}
+                    className={
+                        props.currentPage === "Logs" ? "nav-link active" : "nav-link"
+                    }
+                >
+                    Logs
+                </a>
+            </li>
+            <li>
+                <a
+                    onClick={() => props.handlePageChange("Courses")}
+                    className={
+                        props.currentPage === "Courses" ? "nav-link active" : "nav-link"
+                    }
+                >
+                Courses
+                </a>
+                </li>
+            <li>
+                <a
+                    onClick={() => props.handlePageChange("Stats")}
+                    className={
+                        props.currentPage === "Stats" ? "nav-link active" : "nav-link"
+                    }
+                >
+                Stats
+                </a>
+            </li>
+            <li>
+                <a
+                    onClick={() => props.handlePageChange("Videos")}
+                    className={
+                        props.currentPage === "Videos" ? "nav-link active" : "nav-link"
+                    }
+                >
+                Videos
+                </a>
+            </li>
         </ul>
-        
     </aside>
 
 );
