@@ -3,9 +3,9 @@ import React from "react";
 
 const Navbar = props => (
 
-    <aside class="menu">
+    <aside className="menu has-background-danger">
 
-        <ul class="menu-list">
+        <ul className="menu-list">
             <li>
                 <a
                     onClick={() => props.handlePageChange("Home")}
