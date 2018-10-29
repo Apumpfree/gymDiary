@@ -18,7 +18,7 @@ export default {
     console.log("API page")
     console.log(userData)
     return axios.post("/api/user", userData);
-  }
+  },
 };
 
 
