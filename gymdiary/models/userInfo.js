@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 // const bcrypt = require('bcrypt-node.js');
-
 const Schema = mongoose.Schema;
 
 
@@ -36,6 +35,6 @@ const UserInfo = new Schema({
 //   return bcrypt.compareSync(password,hash)
 // }
 
-const UserInfo = mongoose.model("UserInfo", UserInfo);
+const user = mongoose.model("user", UserInfo);
 
-module.exports = UserInfo;
+module.exports = user;

@@ -5,7 +5,7 @@ const userController = require("../../controllers/userController");
 console.log("at user.js")
 
 // Matches with "/api/user"
-router.route("/api/user")
+router.route("/")
   .get(userController.findAll)
   .post(userController.create);
 
