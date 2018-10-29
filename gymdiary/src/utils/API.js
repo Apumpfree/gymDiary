@@ -17,8 +17,8 @@ export default {
   createUser: function(userData) {
     console.log("API page")
     console.log(userData)
-    return axios.post("/api/user", userData);
-  },
+    return axios.post("/api/user/", userData);
+  }
 };
 
 

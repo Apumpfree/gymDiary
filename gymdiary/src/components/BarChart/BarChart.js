@@ -1,7 +1,12 @@
 import React, { Component } from "react";
 import {Bar} from 'react-chartjs-2';
+import API from "../../utils/API";
 
 class BarChart extends Component{
+    
+    
+    
+    
     constructor(props){
         super(props);
         this.state = {
@@ -10,7 +15,9 @@ class BarChart extends Component{
                 datasets:[
                     {
                     label: 'Days',
-                    data:[ 7, 3, 5, 3 ],
+                    data:[
+                        7, 4, 6, 5,
+                    ],
                     backgroundColor: [
                         '#5BC0EB',
                         '#6CC551',
