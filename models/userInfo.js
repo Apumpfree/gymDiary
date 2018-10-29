@@ -4,11 +4,11 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 
-const UserInfo = new Schema({
+const users = new Schema({
   name: { 
       type: String, 
       trim: true,
-      required: "Please insert Name"
+      
     },
   email: { 
       type: String, 
@@ -36,6 +36,6 @@ const UserInfo = new Schema({
 //   return bcrypt.compareSync(password,hash)
 // }
 
-const users = mongoose.model("users", UserInfo);
+const user = mongoose.model("user", users);
 
-module.exports = users;
+module.exports = user;

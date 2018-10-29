@@ -15,10 +15,11 @@ module.exports = {
       .catch(err => res.status(422).json(err));
   },
   create: function(req, res) {
-    console.log("userController hit")
+    console.log("!!!!!!!!!userController hit!!!!!!!!!!!!")
     db.user
       .create(req.body)
-      .then(dbModel => res.json(dbModel))
+      .then(dbModel => res.json(dbModel),
+      console.log(dbModel))
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {
