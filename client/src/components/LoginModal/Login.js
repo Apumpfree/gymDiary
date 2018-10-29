@@ -21,11 +21,12 @@ class Login extends Component {
         console.log("Login form submitted");
         console.log("email: " + this.state.email);
         console.log("password: " + this.state.password);
-
+    
         //check if email is in DB. if so check if password is in same doc.
+        API.getAllUsers()
+            .then(console.log(res))
 
         
-        this.setState({ email: "", password: "" });
     };
 
     render() {

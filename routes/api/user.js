@@ -2,7 +2,7 @@ const router = require("express").Router();
 const userController = require("../../controllers/userController");
 
 
-console.log("at user.js")
+
 
 // Matches with "/api/user"
 router

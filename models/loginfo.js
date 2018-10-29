@@ -19,6 +19,10 @@ const LogInfo = new Schema({
         type: Date,
         default: Date.now
     },
+    email:{
+        type: String,
+        required: true,
+    }
 });
 
 const logs = mongoose.model("logs", LogInfo);

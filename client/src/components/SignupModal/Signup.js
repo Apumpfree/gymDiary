@@ -55,11 +55,14 @@ class Signup extends Component {
                 passwordVerify: "",
             }))
             .catch(err => console.log(err))
-
+            .then()
     };
     render() {
+        $("#submitButton").on("click", function(){
+            $("modal").removeClass("is-active")
+        });
         return (
-            <div id="signupModal" className="modal ">
+            <div id="signupModal" className="modal">
                 <div className="modal-background "></div>
                 <div id="modal1" className="modal-content has-background-white-ter">
                     <header className="modal-card-head">
