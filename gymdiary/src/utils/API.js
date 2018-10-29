@@ -18,7 +18,19 @@ export default {
     console.log("API page")
     console.log(userData)
     return axios.post("/api/user", userData);
-  }
+  },
+
+
+  // log routes
+  // create new log
+  createLog: function (logData){
+    return axios.post("/api/logs", logData);
+  },
+// get all logs
+  getAllLogs: function(){
+    return axios.get ("/api/logs");
+  },
+
 };
 
 

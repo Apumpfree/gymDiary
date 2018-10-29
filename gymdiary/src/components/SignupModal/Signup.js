@@ -35,7 +35,7 @@ class Signup extends Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        console.log("Login form submitted");
+        console.log("Sign Up form submitted");
         console.log("name: " + this.state.name);
         console.log("email: " + this.state.email);
         console.log("emailV: " + this.state.emailVerify);

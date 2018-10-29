@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import API from "../../utils/API";
 import "./Login.css"
 class Login extends Component {
 
@@ -20,6 +21,10 @@ class Login extends Component {
         console.log("Login form submitted");
         console.log("email: " + this.state.email);
         console.log("password: " + this.state.password);
+
+        //check if email is in DB. if so check if password is in same doc.
+
+        
         this.setState({ email: "", password: "" });
     };
 

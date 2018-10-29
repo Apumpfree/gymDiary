@@ -42,6 +42,18 @@ $("#closeButtonModal").on("click", function(){
   $("#loginModal").removeClass("is-active")
 });
 
+
+$(".courseButton").on("click", function(){
+  console.log("Workout Form button clicked")
+  $("#workOutForm").addClass("is-active");
+});
+$(".closeWorkoutModal").on("click", function(){
+  console.log("closed modal");
+  $("#workOutForm").removeClass("is-active")
+});
+
+
+
 </script>
 
 </html>
