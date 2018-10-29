@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 // const bcrypt = require('bcrypt-node.js');
+
 const Schema = mongoose.Schema;
 
 
@@ -7,7 +8,7 @@ const UserInfo = new Schema({
   name: { 
       type: String, 
       trim: true,
-      required: "Please enter your name"
+      required: "Please insert Name"
     },
   email: { 
       type: String, 
