@@ -33,8 +33,8 @@ class Login extends Component {
             <div id="loginModal" className="modal">
                 <div className="modal-background"></div>
                 <div id="modal1" className="modal-content has-background-white-ter">
-                    <header class="modal-card-head">
-                        <p class="modal-card-title">Login</p>
+                    <header className="modal-card-head">
+                        <p className="modal-card-title">Login</p>
                     </header>
                     <div className="field">
                         <label className="label">Email</label>

@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 
-const UserInfo = new Schema({
+const users = new Schema({
   name: { 
       type: String, 
       trim: true,
@@ -29,13 +29,13 @@ const UserInfo = new Schema({
 
 
 //encrypt and compare passowrds
-// UserInfo.methods.hashPassword= function(password){
+// users.methods.hashPassword= function(password){
 //   return bcrypt.hashSync(password, bcrypt.genSaltsync(10))
 // }
-// UserInfo.methods.comparePassowrd = function(password,hash){
+// users.methods.comparePassowrd = function(password,hash){
 //   return bcrypt.compareSync(password,hash)
 // }
 
-const user = mongoose.model("users", UserInfo);
+const users = mongoose.model("users", users);
 
-module.exports = user;
+module.exports = users;

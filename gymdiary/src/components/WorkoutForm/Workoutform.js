@@ -49,8 +49,8 @@ class Workoutform extends Component {
             <div id="workOutForm" className="modal">
                 <div className="modal-background"></div>
                 <div id="modal1" className="modal-content">
-                    <header class="modal-card-head">
-                        <p class="modal-card-title">Workout Log</p>
+                    <header className="modal-card-head">
+                        <p className="modal-card-title">Workout Log</p>
                     </header>
                     <label className="label">Target Muslce Group</label>
                     {/* Muscle dropdown */}

@@ -6,7 +6,7 @@ console.log("at user.js")
 
 // Matches with "/api/user"
 router
-  .route("/api/user")
+  .route("/")
   .get(userController.findAll)
   .post(userController.create);
 

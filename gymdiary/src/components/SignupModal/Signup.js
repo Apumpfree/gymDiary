@@ -62,8 +62,8 @@ class Signup extends Component {
             <div id="signupModal" className="modal ">
                 <div className="modal-background "></div>
                 <div id="modal1" className="modal-content has-background-white-ter">
-                    <header class="modal-card-head">
-                        <p class="modal-card-title">Sign Up</p>
+                    <header className="modal-card-head">
+                        <p className="modal-card-title">Sign Up</p>
                     </header>
                     <div className="field">
                         <label className="label ">Name</label>
@@ -76,8 +76,8 @@ class Signup extends Component {
                                 value={this.state.name}
                                 onChange={this.handleInputChange}
                             />
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-user"></i>
+                            <span className="icon is-small is-left">
+                                <i className="fas fa-user"></i>
                             </span>
                         </div>
                     </div>
