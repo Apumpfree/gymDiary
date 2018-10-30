@@ -3,7 +3,7 @@ import React from "react";
 
 const Navbar = props => (
 
-    <aside className="menu has-background-danger">
+    <aside className="menu has-background-grey-lighter is-fluid">
 
         <ul className="menu-list">
             <li>

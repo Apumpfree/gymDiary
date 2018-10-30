@@ -1,8 +1,8 @@
 import React from "react";
 
 const Footer = () => (
-    <footer className="footer has-text-centered has-background-warning">
-        Footer derp derp
+    <footer className="footer has-text-centered">
+       Target Rep
     </footer>
 
 );

@@ -21,10 +21,10 @@ class Home extends Component {
                         <div className="hero-body">
                             <div className="container">
                                 <h1 className="title">
-                                    Primary bold title
+                                    The only bad workout is the one that didn't happen.
                                     </h1>
                                 <h2 className="subtitle">
-                                    Primary bold subtitle
+                                    Track your workouts!
                                     </h2>
                             </div>
                         </div>

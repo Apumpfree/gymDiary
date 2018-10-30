@@ -8,7 +8,7 @@ class Courses extends Component {
 
     render() {
         return (
-            <div className="column">
+            <div className="column is-multiline">
                 <WorkoutForm  />
                 {/* row 1 */}
                 <div className="level">
