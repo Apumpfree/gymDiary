@@ -1,0 +1,26 @@
+:root {
+    --main-font-color: #2F3E46;
+    --main-backgroundcolor: #F5F5F5;
+    --main-color: #CAD2C5;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+    font-family: 'Montserrat', sans-serif; /* Changes font site-wide */
+    background-color: var(--main-background-color); /* Assigns CSS variable */
+}
+  
+p {
+    color: var(--main-font-color) /* Assigns CSS variable */
+}
+
+footer {
+    color: var(--main-color)!important; /* Assigns CSS variable */
+    background-color: var(--main-backgroundcolor)!important /* Assigns CSS variable */
+}
+
+.navbar {
+    color: var(--main-color)!important; /* Assigns CSS variable */ 
+    background-color: var(--main-backgroundcolor)!important /* Assigns CSS variable */
+}
