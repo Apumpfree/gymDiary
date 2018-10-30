@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Target Rep</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-  
-  
+  <link rel="stylesheet" href="reset.css">
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -46,6 +46,22 @@ $(".closeWorkoutModal").on("click", function(){
   console.log("closed modal");
   $("#workOutForm").removeClass("is-active")
 });
+
+// ------Night Mode Logic------
+$('.night').on('click', function(event) {
+  $(':root').css({'--main-font-color' : '#F5F5F5'})
+  $(':root').css({'--main-background-color' : '#2F3E46'})
+  $(':root').css({'--main-footer-color' : '#CAD2C5'})
+  $(':root').css({'--main-footer-backgroundcolor' : '#354F52'})
+})
+
+$('.day').on('click', function(event) {
+  $(':root').css({'--main-font-color' : '#2F3E46'})
+  $(':root').css({'--main-background-color' : '#F5F5F5'})
+  $(':root').css({'--main-footer-color' : '#354F52'})
+  $(':root').css({'--main-footer-backgroundcolor' : '#CAD2C5'})
+})
+// ----------------------------
 </script>
 
 </html>

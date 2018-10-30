@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Pie } from 'react-chartjs-2';
-
 class PieChart extends Component {
     constructor(props) {
         super(props);
@@ -10,7 +9,7 @@ class PieChart extends Component {
                 datasets: [
                     {
                         label: 'Days',
-                        data: [7, 3, 5, 3],
+                        data: [10, 12, 4, 10],
                         backgroundColor: [
                             '#5BC0EB',
                             '#6CC551',
@@ -22,8 +21,6 @@ class PieChart extends Component {
             }
         }
     }
-
-
     render() {
         return (
             <div className="pieChart">
@@ -32,7 +29,7 @@ class PieChart extends Component {
                     options={{
                         title: {
                             display: true,
-                            text: 'Weekly Report',
+                            text: 'This Month',
                             fontSize: 25
                         },
                         legend: {
@@ -45,5 +42,4 @@ class PieChart extends Component {
         );
     }
 }
-
 export default PieChart;

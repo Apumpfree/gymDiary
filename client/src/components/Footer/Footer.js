@@ -1,7 +1,7 @@
 import React from "react";
 
 const Footer = () => (
-    <footer className="footer has-text-centered has-background-warning">
+    <footer className="footer has-text-centered">
         Footer derp derp
     </footer>
 

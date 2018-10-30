@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import { Line } from 'react-chartjs-2';
-
 class LineChart extends Component {
     constructor(props) {
         super(props);
         this.state = {
             chartData: {
-                labels: ['Back', 'Chest', 'Legs', 'Core'],
+                labels: ['Back', 'Chest', 'Legs'],
                 datasets: [
                     {
-                        label: 'Weekly',
-                        data: [7, 3, 5, 3],
+                        label: 'Max Weight',
+                        data: [100, 220, 300],
                         backgroundColor: [
                             'transparent',
                         ],
@@ -22,8 +21,6 @@ class LineChart extends Component {
             }
         }
     }
-
-
     render() {
         return (
             <div className="LineChart">
@@ -32,7 +29,7 @@ class LineChart extends Component {
                     options={{
                         title: {
                             display: true,
-                            text: 'Weekly Report',
+                            text: 'Weekly Glance',
                             fontSize: 25
                         },
                         legend: {
@@ -52,5 +49,4 @@ class LineChart extends Component {
         );
     }
 }
-
 export default LineChart;
